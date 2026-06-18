@@ -14,14 +14,14 @@ const matches = [
     league: "Premier League",
     leaguelogo: "/premier-league.png",
     date: "24 Aug",
-    homeTeam: { name: "Manchester United", logo: "/Manu.png" },
+    homeTeam: { name: "Manchester United", logo: "/ManU.png" },
     awayTeam: { name: "Chelsea FC", logo: "/chealsea.png" },
   },
   {
     league: "Premier League",
     leaguelogo: "/premier-league.png",
     date: "24 Aug",
-    homeTeam: { name: "Manchester United", logo: "/Manu.png" },
+    homeTeam: { name: "Manchester United", logo: "/ManU.png" },
     awayTeam: { name: "Chelsea FC", logo: "/chealsea.png" },
   },
 ];
