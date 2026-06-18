@@ -16,7 +16,7 @@ export default function NoonPage() {
         <div className="flex gap-4 pt-7">
           <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-2xl ">
             <Image
-              src="/paris24.png"
+              src="/Paris24.png"
               alt="img"
               fill
               className="object-contain"
