@@ -86,7 +86,7 @@ export default function QuestionsPage() {
       setCurrentIndex(currentIndex + 1)
       setSelectedOption(null)
       // simulatng low time on question 8+
-      if (currentIndex >= 7) setIsLowTime(true)
+      if (currentIndex >= 6) setIsLowTime(true)
     }
   }
 
@@ -115,7 +115,7 @@ export default function QuestionsPage() {
               <span
                 className={`text-xs font-bold px-3 py-1 rounded-full ${
                   isLowTime
-                    ? "bg-[#FF7366]/20 text-[#FF7366] border border-[#FF7366]"
+                    ? "bg-[#E01300]/10 text-[#E0130080] border border-[#E0130080]"
                     : "bg-[#EAFEDD40] text-[#5DE505] border border-[#A8FC73]"
                 }`}
               >
