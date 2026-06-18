@@ -83,7 +83,7 @@ export default function NoonPage() {
 
          {/* CTA link */}
         <button
-          onClick={() => router.push("/noon2")}
+          onClick={() => router.push("/bigband2")}
           className="text-center text-[12px] text-white/50"
         >
           Not Sure, play a{" "}
