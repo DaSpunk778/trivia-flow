@@ -107,7 +107,7 @@ export default function QuestionsPage() {
         <div className="flex flex-col flex-1 px-5 pt-5 gap-3">
 
           {/* Question Card */}
-          <div className="bg-[#1A1A1A] border border-[#2A2A2A] rounded-2xl p-4">
+          <div className="bg-[#1D1D1D] border border-[#303030] rounded-2xl p-4">
             <div className="flex items-center justify-between mb-3">
               <span className="text-white text-sm font-semibold">
                 Question {currentQuestion.id}
