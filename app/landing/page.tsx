@@ -58,9 +58,9 @@ export default function LandingPage() {
     <div className="min-h-screen bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] text-white flex flex-col items-center">
       <div className="w-full max-w-97.5 flex flex-col min-h-screen">
         {/* the Header */}
-        <div className="sticky top-0 z-50 backdrop-blur-md  px-5 py-4 bg-[]#1D1D1D]">
+        <div className="sticky top-0 z-50 backdrop-blur-md  px-5 py-4">
           {/* menu and tabs */}
-          <div className="relative flex items-center justify-between mb-4">
+          <div className="relative flex items-center justify-between mb-2">
             <Menu className="w-8 h-6 text-[#CDCACA]" />
             <div className="flex gap-2">
               {tabs.map((tab) => (

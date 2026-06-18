@@ -12,15 +12,15 @@ export default function TriviaDetailPage() {
   const [activeTab, setActiveTab] = useState("Night (10pm)")
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-[#3A3A3A] via-[#0F0F0F] via-10% to-[#121212] text-white flex flex-col items-center">
+    <div className="min-h-screen bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] text-white flex flex-col items-center">
       <div className="w-full max-w-97.5 flex flex-col min-h-screen">
 
         {/* Header */}
-        <div className="sticky top-0 z-50 bg-[#1A1A1A] flex items-center justify-between px-5 py-4">
+        <div className="sticky top-0 z-50 backdrop-blur flex items-center justify-between px-5 py-4">
           <button onClick={() => router.back()}>
             <ChevronLeft className="w-5 h-5 text-white" />
           </button>
-          <h1 className="text-sm font-bold text-white">Big Band Trivia 3</h1>
+          <h1 className="text-sm font-bold text-white">Big Band Trivia 2</h1>
           <div className="w-8 h-8 rounded-full overflow-hidden">
             <Image
               src="/prof.png"
@@ -38,10 +38,10 @@ export default function TriviaDetailPage() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`flex-1 text-xs font-semibold py-2 px-3 rounded-full transition-all duration-200 ${
+              className={`flex-1 text-[14px] font-semibold py-1 px-1 rounded-full transition-all duration-200 ${
                 activeTab === tab
-                  ? "bg-[#20BF55] text-black"
-                  : "text-[#888888]"
+                  ? "bg-[#5DE505] border border-[#A8FC73] text-black "
+                  : "text-[#DADADA]"
               }`}
             >
               {tab}
