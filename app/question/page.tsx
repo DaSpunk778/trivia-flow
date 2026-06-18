@@ -115,7 +115,7 @@ export default function QuestionsPage() {
               <span
                 className={`text-xs font-bold px-3 py-1 rounded-full ${
                   isLowTime
-                    ? "bg-[#E01300]/10 text-[#E0130080] border border-[#E0130080]"
+                    ? "bg-[#E01300]/10 text-[#E0130080] border border-[#E0130080]/25"
                     : "bg-[#EAFEDD40] text-[#5DE505] border border-[#A8FC73]"
                 }`}
               >
