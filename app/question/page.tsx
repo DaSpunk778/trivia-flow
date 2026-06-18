@@ -85,7 +85,7 @@ export default function QuestionsPage() {
     } else {
       setCurrentIndex(currentIndex + 1)
       setSelectedOption(null)
-      // simulate low time on question 8+
+      // simulatng low time on question 8+
       if (currentIndex >= 7) setIsLowTime(true)
     }
   }
@@ -95,7 +95,7 @@ export default function QuestionsPage() {
       <div className="w-full max-w-97.5 flex flex-col min-h-screen">
 
         {/* Header */}
-        <div className="sticky top-0 z-50 bg-[#1A1A1A] flex items-center justify-between px-5 py-4">
+        <div className="sticky top-0 z-50 backdrop-blur flex items-center justify-between px-5 py-4">
           <button onClick={() => router.back()}>
             <X className="w-5 h-5 text-white" />
           </button>
@@ -116,7 +116,7 @@ export default function QuestionsPage() {
                 className={`text-xs font-bold px-3 py-1 rounded-full ${
                   isLowTime
                     ? "bg-[#FF7366]/20 text-[#FF7366] border border-[#FF7366]"
-                    : "bg-[#20BF55]/20 text-[#20BF55] border border-[#20BF55]"
+                    : "bg-[#EAFEDD40] text-[#5DE505] border border-[#A8FC73]"
                 }`}
               >
                 {isLowTime ? "01:30" : "07:30"}
@@ -135,7 +135,7 @@ export default function QuestionsPage() {
                 onClick={() => setSelectedOption(index)}
                 className={`flex items-center justify-between bg-[#1A1A1A] border rounded-2xl px-4 py-4 transition-all duration-200 ${
                   selectedOption === index
-                    ? "border-[#20BF55]"
+                    ? "border-none"
                     : "border-[#2A2A2A]"
                 }`}
               >
@@ -146,14 +146,14 @@ export default function QuestionsPage() {
 
                 {/* Radio Circle */}
                 <div
-                  className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all duration-200 ${
-                    selectedOption === index
-                      ? "border-[#20BF55] bg-[#20BF55]"
-                      : "border-[#444444] bg-transparent"
-                  }`}
-                >
+                      className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all duration-200 ${
+                        selectedOption === index
+                          ? "border-[#444444] bg-[#5DE505]"
+                          : "border-[#444444] bg-transparent"
+                      }`}
+                    >
                   {selectedOption === index && (
-                    <div className="w-2 h-2 rounded-full bg-white" />
+                    <div className="w-2 h-2 rounded-full bg-[]" />
                   )}
                 </div>
               </button>
@@ -168,7 +168,7 @@ export default function QuestionsPage() {
           {/* Progress Bar */}
           <div className="w-full h-1 bg-[#2A2A2A] rounded-full mb-4 overflow-hidden">
             <div
-              className="h-full bg-[#20BF55] rounded-full transition-all duration-500"
+              className="h-full bg-[#5DE505] rounded-full transition-all duration-500"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -180,7 +180,7 @@ export default function QuestionsPage() {
             </span>
             <button
               onClick={handleNext}
-              className="bg-[#FCFC77] text-[#1A1A1A] font-bold text-sm px-8 py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
+              className="bg-[#FCFC77] text-[#1E3211] font-bold text-sm px-8 py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
             >
               {isLastQuestion ? "Submit" : "Next"}
             </button>
