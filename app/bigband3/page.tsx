@@ -9,7 +9,7 @@ const tabs = ["Noon (12pm)", "Evening (4pm)", "Night (10pm)"]
 
 export default function TriviaDetailPage() {
   const router = useRouter()
-  const [activeTab, setActiveTab] = useState("Evening (4pm)")
+  const [activeTab, setActiveTab] = useState("Night (10pm)")
 
   return (
     <div className="min-h-screen bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] text-white flex flex-col items-center">
@@ -20,14 +20,14 @@ export default function TriviaDetailPage() {
           <button onClick={() => router.back()}>
             <ChevronLeft className="w-5 h-5 text-white" />
           </button>
-          <h1 className="text-sm font-bold text-white">Big Band Trivia 2</h1>
-          <div className="w-8 h-8 rounded-full overflow-hidden bg-white">
+          <h1 className="text-sm font-bold text-white">Big Band Trivia 3</h1>
+          <div className="w-8 h-8 rounded-full overflow-hidden">
             <Image
               src="/prof.png"
               alt="Profile"
-              width={59}
-              height={59}
-              className="object-contain"
+              width={32}
+              height={32}
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function TriviaDetailPage() {
             Not Sure, play a{" "}
             <span
               className="text-[#FCFC77] font-bold cursor-pointer"
-              onClick={() => router.push("/bigband3")}
+              onClick={() => router.push("/question")}
             >
               Sample Trivia Game
             </span>
