@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 type TriviaCardProps = {
+  id: string;
   title: string;
   prize: string;
   closes: string;

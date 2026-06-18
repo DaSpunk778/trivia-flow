@@ -28,18 +28,21 @@ const matches = [
 
 const triviaList = [
   {
+    id: "big-band-questions-1",
     title: "Big Band Questions",
     prize: "Win up to ₦20,000",
     closes: "Closes in 2 hours",
     image: "/Glow.jpg",
   },
   {
+    id: "big-band-questions-2",
     title: "Big Band Questions",
     prize: "Win up to ₦20,000",
     closes: "Closes in 2 hours",
     image: "/Glow.jpg",
   },
   {
+    id: "big-band-questions-3",
     title: "Big Band Questions",
     prize: "Win up to ₦20,000",
     closes: "Closes in 2 hours",
@@ -55,7 +58,7 @@ export default function LandingPage() {
     <div className="min-h-screen bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] text-white flex flex-col items-center">
       <div className="w-full max-w-97.5 flex flex-col min-h-screen">
         {/* the Header */}
-        <div className="sticky top-0 z-50 backdrop-blur-md  px-5 py-4">
+        <div className="sticky top-0 z-50 backdrop-blur-md  px-5 py-4 bg-[]#1D1D1D]">
           {/* menu and tabs */}
           <div className="relative flex items-center justify-between mb-4">
             <Menu className="w-8 h-6 text-[#CDCACA]" />
@@ -111,12 +114,12 @@ export default function LandingPage() {
             </button>
           </div>
 
-          <div className="flex flex-col divide-y divide-white/10">
+          <div className="flex flex-col ">
             {triviaList.map((trivia, i) => (
               <TriviaCard
                 key={i}
                 {...trivia}
-                onPlay={() => console.log("play", i)}
+                onPlay={() => router.push("/noon")}
               />
             ))}
           </div>
