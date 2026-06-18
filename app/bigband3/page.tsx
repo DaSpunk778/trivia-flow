@@ -77,12 +77,12 @@ export default function TriviaDetailPage() {
           </p>
 
           {/* Sample Question Card */}
-          <div className="bg-[#1A1A1A] border border-[#2A2A2A] rounded-2xl p-4">
+          <div className="bg-[#1D1D1D] border border-[#303030] rounded-2xl p-4">
 
             {/* Card Header */}
             <div className="flex items-center justify-between mb-3">
-              <span className="text-white text-sm font-semibold">Sample Question</span>
-              <span className="text-[#888888] text-xs bg-[#2A2A2A] rounded-full px-2 py-1">
+              <span className="text-[#F6F2F2] text-sm font-semibold">Sample Question</span>
+              <span className="text-[#F6F2F2] text-xs bg-[#2A2A2A] rounded-full px-2 py-1">
                 12
               </span>
             </div>
