@@ -135,8 +135,8 @@ export default function QuestionsPage() {
                 onClick={() => setSelectedOption(index)}
                 className="flex items-center justify-between bg-[#1A1A1A] border border-[#303030] rounded-2xl px-4 py-4 transition-all duration-200 "
               >
-                <span className="text-white text-sm">
-                  <span className="text-[#888888] mr-2">{letters[index]}.</span>
+                <span className="text-[#F6F2F2] text-sm">
+                  <span className="text-[#F6F2F2] mr-2">{letters[index]}.</span>
                   {option}
                 </span>
 
