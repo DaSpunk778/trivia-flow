@@ -159,7 +159,7 @@ export default function QuestionsPage() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="px-5 pb-6">
+        <div className="px-5 pb-15">
 
           {/* Progress Bar */}
           <div className="w-full h-1 bg-[#2A2A2A] rounded-full mb-4 overflow-hidden">
