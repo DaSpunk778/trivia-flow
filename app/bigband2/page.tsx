@@ -94,7 +94,7 @@ export default function TriviaDetailPage() {
 
             {/* Start Trivia Button */}
             <button
-              onClick={() => router.push("/question")}
+              onClick={() => router.push("/bigband3")}
               className="w-full bg-[#FCFC77] text-[#1A1A1A] font-bold text-sm py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
             >
               Start Trivia
@@ -107,7 +107,7 @@ export default function TriviaDetailPage() {
             Not Sure, play a{" "}
             <span
               className="text-[#FCFC77] font-bold cursor-pointer"
-              onClick={() => router.push("/bigband3")}
+              onClick={() => router.push("/question")}
             >
               Sample Trivia Game
             </span>
