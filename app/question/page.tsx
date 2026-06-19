@@ -69,7 +69,7 @@ const questions = [
 
 const letters = ["A", "B", "C", "D"]
 
-export default function QuestionsPage() {
+export default function QuestionPage() {
   const router = useRouter()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState<number | null>(null)
@@ -81,7 +81,7 @@ export default function QuestionsPage() {
 
   const handleNext = () => {
     if (isLastQuestion) {
-      router.push("/trivia-summary")
+      router.push("/submit")
     } else {
       setCurrentIndex(currentIndex + 1)
       setSelectedOption(null)

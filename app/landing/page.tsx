@@ -98,7 +98,7 @@ export default function LandingPage() {
           </div>
 
           {/** view all predictions */}
-          <button className="text-sm mt-4 self-center rounded-full border border-white px-5 py-1 text-[14px] font-medium text-white transition-colors hover:bg-white/5 active:bg-white/10">
+          <button className="text-sm mt-4 self-center rounded-full border border-[#E9E9E9] px-5 py-1 text-[14px] font-medium text-[#E9E9E9] transition-colors hover:bg-white/5 active:bg-white/10">
             View all predictons
           </button>
 
