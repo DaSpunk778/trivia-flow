@@ -10,6 +10,7 @@ const resultConfig = {
   high: {
     percentage: "89%",
     color: "#20BF55",
+    bgColor: "#303030",
     heading: "Congratulations! 🥳",
     description: "You're one of our 5 lucky winners in this round. Check your email for details on how to claim your reward.",
     attempted: "8 of 12",
@@ -18,6 +19,7 @@ const resultConfig = {
   medium: {
     percentage: "50%",
     color: "#E5C907",
+    bgColor: "rgba(254, 228, 70, 0.15)",
     heading: "Great Job! 👍",
     description: "Keep going! You surpassed 25 other players and climbed the leaderboard.",
     attempted: "5 of 12",
@@ -26,6 +28,7 @@ const resultConfig = {
   low: {
     percentage: "20%",
     color: "#FF7366",
+    bgColor: "rgba(224, 19, 0, 0.15)",
     heading: "Almost! 😢",
     description: "Better luck next time. View your current ranking on the leaderboard.",
     attempted: "5 of 12",
@@ -66,8 +69,8 @@ export default function SubmitPage() {
 
             {/* Percentage Circle */}
             <div
-              className="w-20 h-20 bg-[#303030] font-light rounded-full border-2 flex items-center justify-center mb-4"
-              style={{ borderColor: result.color }}
+              className="w-20 h-20  font-light rounded-full border-2 flex items-center justify-center mb-4"
+              style={{ borderColor: result.color, backgroundColor: result.bgColor }}
             >
               <span className="text-xl font-bold" style={{ color: result.color }}>
                 {result.percentage}
@@ -117,7 +120,7 @@ export default function SubmitPage() {
           <div className="flex-1" />
 
           {/* Bottom Buttons */}
-          <div className="flex gap-3 mb-17">
+          <div className="flex gap-3 mb-15 sm:mb-25">
             <button
               onClick={() => router.push("/landing")}
               className="flex-1 bg-[#1D1D1D] text-[#FCFC77] font-bold text-sm py-3 rounded-xl transition-all duration-200 active:scale-[0.98]"
