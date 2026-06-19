@@ -21,7 +21,7 @@ export default function TriviaDetailPage() {
             <ChevronLeft className="w-5 h-5 text-white" />
           </button>
           <h1 className="text-sm font-bold text-white">Big Band Trivia 3</h1>
-          <div className="w-8 h-8 rounded-full overflow-hidden">
+          <div className="w-8 h-8 rounded-full overflow-hidden bg-white">
             <Image
               src="/prof.png"
               alt="Profile"
