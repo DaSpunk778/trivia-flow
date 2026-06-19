@@ -56,7 +56,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] text-white flex flex-col items-center">
-      <div className="w-full max-w-97.5 flex flex-col min-h-screen">
+      <div className="w-full max-w-97.5 flex flex-col ">
         {/* the Header */}
         <div className="sticky top-0 z-50 backdrop-blur-md  px-5 py-4">
           {/* menu and tabs */}

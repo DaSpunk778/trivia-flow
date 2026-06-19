@@ -11,7 +11,7 @@ export default function NoonPage() {
 
   return (
     <div className="min-h-screen bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] text-white flex flex-col items-center">
-      <div className="w-full max-w-97.5 flex flex-col min-h-screen px-5 py-6 gap-6">
+      <div className="w-full max-w-97.5 flex flex-col  px-5 py-6 gap-6">
         {/** Banner */}
         <div className="flex gap-4 pt-7">
           <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-2xl ">
