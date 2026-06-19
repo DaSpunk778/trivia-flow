@@ -120,7 +120,7 @@ export default function SubmitPage() {
           <div className="flex-1" />
 
           {/* Bottom Buttons */}
-          <div className="flex gap-3 mb-6">
+          <div className="flex gap-3 mb-6 py-30">
             <button
               onClick={() => router.push("/landing")}
               className="flex-1 bg-[#1D1D1D] text-[#FCFC77] font-bold text-sm py-3 rounded-xl transition-all duration-200 active:scale-[0.98]"
