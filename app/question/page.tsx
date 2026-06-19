@@ -142,7 +142,7 @@ export default function QuestionPage() {
 
                 {/* Radio Circle */}
                 <div
-                      className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all duration-200 ${
+                      className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 transition-all duration-200 ${
                         selectedOption === index
                           ? "border-[#444444] bg-[#5DE505]"
                           : "border-[#444444] bg-transparent"
@@ -176,7 +176,7 @@ export default function QuestionPage() {
             </span>
             <button
               onClick={handleNext}
-              className="bg-[#FCFC77] text-[#1E3211] font-bold text-sm px-8 py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
+              className="bg-[#FCFC77] text-primary-dark font-bold text-sm px-8 py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
             >
               {isLastQuestion ? "Submit" : "Next"}
             </button>

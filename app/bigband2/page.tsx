@@ -59,7 +59,7 @@ export default function TriviaDetailPage() {
               alt="Big Band Trivia"
               width={390}
               height={220}
-              className="w-full h-[220px] object-cover"
+              className="w-full h-55 object-cover"
             />
           </div>
 

@@ -54,7 +54,7 @@ export default function SubmitPage() {
       <div className="w-full max-w-97.5 flex flex-col min-h-screen">
 
         {/* Header */}
-        <div className="sticky top-0 z-50 flex items-center justify-center px-5 py-4">
+        <div className="sticky top-0 z-50 flex backdrop-blur items-center justify-center px-5 py-4">
           <h1 className="text-sm font-semibold text-white">Trivia Summary</h1>
         </div>
 
