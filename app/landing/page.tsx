@@ -67,10 +67,10 @@ export default function LandingPage() {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`text-sm font-semibold pb-1 px-2 transition-all duration-200 ${
+                  className={`text-sm font-semibold pb-1 px-2 border-b-2 transition-all duration-200 ${
                     activeTab === tab
-                      ? "text-[#5DE505] border-b-2 border-[#5DE505]"
-                      : "text-[#DADADA]"
+                      ? "text-[#5DE505]  border-[#5DE505]"
+                      : "text-[#DADADA] border-transparent"
                   }`}
                 >
                   {tab}
