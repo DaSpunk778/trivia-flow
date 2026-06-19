@@ -25,9 +25,9 @@ export default function TriviaDetailPage() {
             <Image
               src="/prof.png"
               alt="Profile"
-              width={32}
-              height={32}
-              className="w-full h-full object-cover"
+              width={59}
+              height={59}
+              className="object-contain"
             />
           </div>
         </div>
