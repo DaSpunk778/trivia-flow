@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} bg-[#1D1D1D] font-inter min-h-screen flex justify-center`}>
-        <div className="w-full max-w-97.5 min-h-screen flex flex-col">
+        <div className="w-full max-w-97.5  flex flex-col">
           {children}
         </div>
       </body>
