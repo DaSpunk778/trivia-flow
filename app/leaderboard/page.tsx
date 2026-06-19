@@ -17,7 +17,7 @@ const rankedList = [
   { rank: 7, name: "RakshaSallan Alli", score: "50%", image: "/image7.jpg", isMe: false },
   { rank: 8, name: "LakshitKumar Akash", score: "40%", image: "/image8.jpg", isMe: false },
   { rank: 9, name: "Shivam Shinabali Kumar", score: "30%", image: "/image9.jpg", isMe: false },
-  { rank: 10, name: "Me", score: "20%", image: "/image10.jpg", isMe: true },
+  { rank: 10, name: "Me", score: "20%", bg:"rgba(234, 254, 221, 0.15)", image: "/image10.jpg", isMe: true },
   { rank: 11, name: "Nishit Kishant Sharma", score: "10%", image: "/image11.jpg", isMe: false },
   { rank: 12, name: "Keerti Kerala Anjushim", score: "10%", image: "/image12.png", isMe: false },
 ]
@@ -96,7 +96,7 @@ export default function LeaderboardPage() {
               <div
                 key={person.rank}
                 className={`flex items-center gap-3 bg-[#1A1A1A] border rounded-xl px-2 py-1 ${
-                  person.isMe ? "border-[#20BF55]" : "border-[#2A2A2A]"
+                  person.isMe ? "border-[#A8FC73] bg-[#A8FC73]/15 " : "border-[#2A2A2A]"
                 }`}
               >
                 <span className="text-white text-sm font-medium w-6">{person.rank}.</span>
