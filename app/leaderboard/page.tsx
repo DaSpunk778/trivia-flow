@@ -42,7 +42,7 @@ export default function LeaderboardPage() {
         <div className="flex flex-col flex-1 px-5 pt-5">
 
           {/* Podium Card */}
-          <div className="bg-[#1A1A1A] border border-[#2A2A2A] rounded-2xl p-5 mb-6">
+          <div className="bg-[#1D1D1D] border border-[#303030] rounded-2xl p-5 mb-6">
             <div className="flex items-end justify-center gap-4">
               {podium.map((person) => (
                 <div
@@ -72,7 +72,7 @@ export default function LeaderboardPage() {
                     </div>
 
                     {/* Crown + Rank Badge */}
-                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 bg-[#1A1A1A] border border-[#2A2A2A] rounded-full px-2 py-0.5">
+                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] rounded-full px-2 py-1">
                       <Crown className="w-3 h-3 text-[#D9E012]" />
                       <span className="text-white text-xs font-bold">#{person.rank}</span>
                     </div>
