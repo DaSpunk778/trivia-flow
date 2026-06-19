@@ -94,12 +94,12 @@ export default function SubmitPage() {
             Here is a breakdown of your result
           </h3>
 
-          <div className="flex items-start justify-between mb-8">
+          <div className="flex items-start justify-between mb-6">
 
             {/* Questions Attempted */}
             <div className="flex flex-col gap-1">
               <div className="flex items-center gap-2">
-                <HelpCircle className="w-4 h-4 text-[#888888]" />
+                <HelpCircle className="w-4 h-4 text-[#CDCACA]" />
                 <span className="text-[#888888] text-xs">Total questions attempted</span>
               </div>
               <span className="text-[#F6F2F2] text-sm px-6 font-semibold">{result.attempted}</span>
@@ -108,7 +108,7 @@ export default function SubmitPage() {
             {/* Time Used */}
             <div className="flex flex-col gap-1">
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-[#888888]" />
+                <Clock className="w-4 h-4 text-[#CDCACA]" />
                 <span className="text-[#888888] text-xs">Total time used</span>
               </div>
               <span className="text-[#F6F2F2] text-sm px-6 font-semibold">{result.time}</span>
