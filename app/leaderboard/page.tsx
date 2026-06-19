@@ -74,13 +74,13 @@ export default function LeaderboardPage() {
                     {/* Crown + Rank Badge */}
                     <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] rounded-full px-2 py-1">
                       <Crown className="w-3 h-3 text-[#D9E012]" />
-                      <span className="text-white text-xs font-bold">#{person.rank}</span>
+                      <span className="text-[#DADADA] text-xs font-bold">#{person.rank}</span>
                     </div>
                   </div>
 
                   {/* Name + Score */}
                   <div className="text-center mt-4">
-                    <p className="text-white text-xs font-semibold max-w-[90px]">
+                    <p className="text-[#DADADA] text-[10px] font-semibold max-w-[90px]">
                       {person.name}
                     </p>
                     <p className="text-[#888888] text-xs">Score: {person.score}</p>
