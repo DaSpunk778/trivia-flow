@@ -30,7 +30,7 @@ export default function LeaderboardPage() {
       <div className="w-full max-w-[390px] flex flex-col min-h-screen">
 
         {/* Header */}
-        <div className="sticky top-0 z-50 flex items-center justify-between px-5 py-4">
+        <div className="sticky top-0 z-50 backdrop-blur flex items-center justify-between px-5 py-4">
           <button onClick={() => router.back()}>
             <ChevronLeft className="w-5 h-5 text-white" />
           </button>
