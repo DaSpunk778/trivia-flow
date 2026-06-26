@@ -15,8 +15,8 @@ export default function NoonPage() {
         {/** Banner */}
         <div className="flex gap-4 pt-7">
           <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-2xl ">
-            <Image
-              src="/Paris24.png"
+            <Image 
+              src="/Paris24.png" 
               alt="img"
               fill
               className="object-contain"
@@ -27,7 +27,7 @@ export default function NoonPage() {
               2024 Olympic Tournament
               <br /> Trivial
             </h1>
-            <span className="self-start rounded-lg  bg-white/10  px-3 py-1 text-[12px] font-medium text-[#DADADA]">
+            <span className="self-start rounded-lg  bg-white/10  px-3 py-1 text-[12px] font-medium text-faded-white">
               start in 4 hours
             </span>
           </div>
@@ -35,11 +35,11 @@ export default function NoonPage() {
 
         {/* Tag pills */}
         <div className="flex gap-2">
-          <div className="flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-[12px]  text-[#DADADA]">
+          <div className="flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-[12px]  text-faded-white">
             <FaMoneyBillWave size={14} className="text-white" />
             N50,000
           </div>
-          <div className="flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-[12px]  text-[#DADADA]">
+          <div className="flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-[12px]  text-faded-white">
             <FaMoneyBillWave size={14} className="text-white" />
             Medium
           </div>
@@ -66,16 +66,16 @@ export default function NoonPage() {
         </div>
 
          {/* Sample question card */}
-        <div className="rounded-2xl border border-[#303030]  bg-[#1D1D1D] p-4 flex flex-col gap-4">
+        <div className="rounded-2xl border border-card-border  bg-primary-card p-4 flex flex-col gap-4">
           <div className="flex items-center justify-between">
-            <span className="text-[14px]  text-[#F6F2F2]">
+            <span className="text-[14px]  text-primary-text">
               Sample Question
             </span>
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 text-[12px] font-semibold text-[#F6F2F2]">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 text-[12px] font-semibold text-primary-text">
               12
             </span>
           </div>
-          <p className="text-[14px] text-[#F6F2F2] leading-snug">
+          <p className="text-[14px] text-primary-text leading-snug">
             Which country has won the most FIFA World Cup titles in
             men&apos;s football?
           </p>
@@ -87,7 +87,7 @@ export default function NoonPage() {
           className="text-center text-[12px] text-white/50"
         >
           Not Sure, play a{" "}
-          <span className="font-bold text-[#FCFC77]">Sample Trivia Game</span>
+          <span className="font-bold text-primary-yellow">Sample Trivia Game</span> 
         </button>
       </div>
     </div>

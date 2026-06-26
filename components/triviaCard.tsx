@@ -27,17 +27,17 @@ export function TriviaCard({
             {title}
           </span>
           <span className="text-[13px] text-white/50">{prize}</span>
-          <span className="text-[12px] font-medium text-[#FCFC77]">
+          <span className="text-[12px] font-medium text-primary-yellow">
             {closes}
           </span>
         </div>
       </div>
       <button
         onClick={onPlay}
-        className="shrink-0 rounded-full bg-[#1D1D1D] px-5 py-2 text-[13px] font-semibold text-[#FCFC77] transition-colors hover:bg-white/5 active:bg-white/10"
+        className="shrink-0 rounded-full bg-primary-card px-5 py-2 text-[13px] font-semibold text-primary-yellow transition-colors hover:bg-white/5 active:bg-white/10"
       >
         Play
-      </button>
+      </button> 
     </div>
-  );
+  ); 
 }

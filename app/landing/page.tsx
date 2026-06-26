@@ -69,9 +69,9 @@ export default function LandingPage() {
                   onClick={() => setActiveTab(tab)}
                   className={`text-sm font-semibold pb-1 px-2 border-b-2 transition-all duration-200 ${
                     activeTab === tab
-                      ? "text-[#5DE505]  border-[#5DE505]"
-                      : "text-[#DADADA] border-transparent"
-                  }`}
+                      ? "text-primary-green  border-primary-green"
+                      : "text-faded-white border-transparent"
+                  }`} 
                 >
                   {tab}
                 </button>
@@ -84,7 +84,7 @@ export default function LandingPage() {
         <div className="flex flex-col flex-1 px-5 pt-6">
           {/** predict section */}
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-[#F6F2F2] text-[16px] font-bold">Predict</h2>
+            <h2 className="text-primary-text text-[16px] font-bold">Predict</h2>
             <span className="text-xs text-[#20BF55] font-bold border border-[#20BF55] bg-[#20BF55]/10 shadow-[0_0_2px_#20BF55] rounded-4xl px-2 py-1">
               Live Now
             </span>
@@ -107,8 +107,8 @@ export default function LandingPage() {
 
           {/** trivia section */}
           <div className="flex items-center justify-between mb-2">
-            <h2 className="text-[#F6F2F2] text-[16px] font-bold">Trivia</h2>
-            <button className="flex items-center gap-1 text-[14px] font-semibold text-[#5DE505]">
+            <h2 className="text-primary-text text-[16px] font-bold">Trivia</h2>
+            <button className="flex items-center gap-1 text-[14px] font-semibold text-primary-green">
               See all
               <ChevronRight className="h-4 w-4" />
             </button>

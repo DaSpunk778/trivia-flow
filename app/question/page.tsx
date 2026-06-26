@@ -107,7 +107,7 @@ export default function QuestionPage() {
         <div className="flex flex-col flex-1 px-5 pt-5 gap-3">
 
           {/* Question Card */}
-          <div className="bg-[#1D1D1D] border border-[#303030] rounded-2xl p-4">
+          <div className="bg-primary-card border border-card-border rounded-2xl p-4">
             <div className="flex items-center justify-between mb-3">
               <span className="text-white text-sm font-semibold">
                 Question {currentQuestion.id}
@@ -116,7 +116,7 @@ export default function QuestionPage() {
                 className={`text-xs font-bold px-3 py-1 rounded-full ${
                   isLowTime
                     ? "bg-[#E01300]/10 text-[#E0130080] border border-[#E0130080]/25"
-                    : "bg-[#EAFEDD40] text-[#5DE505] border border-[#A8FC73]"
+                    : "bg-[#EAFEDD40] text-primary-green border border-[#A8FC73]"
                 }`}
               >
                 {isLowTime ? "01:30" : "07:30"}
@@ -133,10 +133,10 @@ export default function QuestionPage() {
               <button
                 key={index}
                 onClick={() => setSelectedOption(index)}
-                className="flex items-center justify-between bg-[#1A1A1A] border border-[#303030] rounded-2xl px-4 py-4 transition-all duration-200 "
+                className="flex items-center justify-between bg-[#1A1A1A] border border-card-border rounded-2xl px-4 py-4 transition-all duration-200 "
               >
-                <span className="text-[#F6F2F2] text-sm">
-                  <span className="text-[#F6F2F2] mr-2">{letters[index]}.</span>
+                <span className="text-primary-text text-sm">
+                  <span className="text-primary-text mr-2">{letters[index]}.</span>
                   {option}
                 </span>
 
@@ -144,7 +144,7 @@ export default function QuestionPage() {
                 <div
                       className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 transition-all duration-200 ${
                         selectedOption === index
-                          ? "border-[#444444] bg-[#5DE505]"
+                          ? "border-[#444444] bg-primary-green"
                           : "border-[#444444] bg-transparent"
                       }`}
                     >
@@ -164,21 +164,21 @@ export default function QuestionPage() {
           {/* Progress Bar */}
           <div className="w-full h-1 bg-[#2A2A2A] rounded-full mb-4 overflow-hidden">
             <div
-              className="h-full bg-[#5DE505] rounded-full transition-all duration-500"
+              className="h-full bg-primary-green rounded-full transition-all duration-500"
               style={{ width: `${progress}%` }}
             />
-          </div>
+          </div> 
 
-          {/* Count + Button */}
-          <div className="flex items-center justify-between">
-            <span className="text-[#888888] text-sm">
+          {/* Count + Button */} 
+          <div className="flex items-center justify-between"> 
+            <span className="text-primary-grey text-sm">
               {currentIndex + 1} of {questions.length}
             </span>
             <button
               onClick={handleNext}
-              className="bg-[#FCFC77] text-primary-dark font-bold text-sm px-8 py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
+              className="bg-primary-yellow text-primary-dark font-bold text-sm px-8 py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
             >
-              {isLastQuestion ? "Submit" : "Next"}
+              {isLastQuestion ? "Submit" : "Next"} 
             </button>
           </div>
 

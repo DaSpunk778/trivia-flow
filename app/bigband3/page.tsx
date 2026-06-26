@@ -10,7 +10,7 @@ const tabs = ["Noon (12pm)", "Evening (4pm)", "Night (10pm)"]
 export default function TriviaDetailPage() {
   const router = useRouter()
   const [activeTab, setActiveTab] = useState("Night (10pm)")
-
+ 
   return (
     <div className="min-h-screen bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] text-white flex flex-col items-center">
       <div className="w-full max-w-97.5 flex flex-col ">
@@ -36,12 +36,12 @@ export default function TriviaDetailPage() {
         <div className="flex items-center justify-between px-5 py-3 gap-2">
           {tabs.map((tab) => (
             <button
-              key={tab}
+              key={tab} 
               onClick={() => setActiveTab(tab)}
               className={`flex-1 text-[14px] font-semibold py-1 px-1 rounded-full transition-all duration-200 ${
                 activeTab === tab
-                  ? "bg-[#5DE505] border border-[#A8FC73] text-black "
-                  : "text-[#DADADA]"
+                  ? "bg-primary-green border border-[#A8FC73] text-black "
+                  : "text-faded-white" 
               }`}
             >
               {tab}
@@ -66,23 +66,23 @@ export default function TriviaDetailPage() {
           {/* Title + Duration */}
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-white text-[16px] font-bold">Big Bang Trivia 3</h2>
-            <span className="text-[#888888] text-xs bg-[#2A2A2A] rounded-full px-3 py-1">
+            <span className="text-primary-grey text-xs bg-[#2A2A2A] rounded-full px-3 py-1">
               5 minutes
             </span>
           </div>
 
           {/* Description */}
-          <p className="text-[#888888] text-xs leading-relaxed mb-5">
+          <p className="text-primary-grey text-xs leading-relaxed mb-5">
             This game is a for runners, stand the chance to win amazing prizes with our trivia game questions happening 3 times a day, your percentage show your stand on the leaderboards after playing, so try as much as you can to get a higher percentage.
           </p>
 
           {/* Sample Question Card */}
-          <div className="bg-[#1D1D1D] border border-[#303030] rounded-2xl p-4">
+          <div className="bg-primary-card border border-card-border rounded-2xl p-4">
 
             {/* Card Header */}
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[#F6F2F2] text-sm font-semibold">Sample Question</span>
-              <span className="text-[#F6F2F2] text-xs bg-[#2A2A2A] rounded-full px-2 py-1">
+              <span className="text-primary-text text-sm font-semibold">Sample Question</span>
+              <span className="text-primary-text text-xs bg-[#2A2A2A] rounded-full px-2 py-1">
                 12
               </span>
             </div>
@@ -95,18 +95,18 @@ export default function TriviaDetailPage() {
             {/* Start Trivia Button */}
             <button
               onClick={() => router.push("/question")}
-              className="w-full bg-[#FCFC77] text-[#1A1A1A] font-bold text-sm py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
+              className="w-full bg-primary-yellow text-[#1A1A1A] font-bold text-sm py-3 rounded-xl transition-all duration-200 hover:bg-[#e9e966] active:scale-[0.98]"
             >
               Start Trivia
             </button>
 
           </div>
-
+ 
           {/* Not Sure Link */}
-          <p className="text-[#888888] text-xs text-center mt-4 mb-6">
+          <p className="text-primary-grey text-xs text-center mt-4 mb-6">
             Not Sure, play a{" "}
             <span
-              className="text-[#FCFC77] font-bold cursor-pointer"
+              className="text-primary-yellow font-bold cursor-pointer"
               onClick={() => router.push("/question")}
             >
               Sample Trivia Game

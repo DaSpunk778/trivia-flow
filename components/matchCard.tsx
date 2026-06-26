@@ -23,26 +23,26 @@ export function MatchCard({
   onClick,
 }: MatchCardProps) {
   return (
-    <button
+    <button 
       onClick={onClick}
-      className="flex w-70 shrink-0 flex-col gap-4 rounded-2xl bg-[#1D1D1D] border border-[#303030] px-4 py-3.5 text-left transition-colors hover:bg-[#242426] active:bg-[#262628]"
+      className="flex w-70 shrink-0 flex-col gap-4 rounded-2xl bg-primary-card border border-card-border px-4 py-3.5 text-left transition-colors hover:bg-[#242426] active:bg-[#262628]"
     >
       {/* Header: competition + date */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white">
             <Image
-              src={leaguelogo}
+              src={leaguelogo}  
               alt={league}
               width={30}
               height={30}
-              className="h-3 w-3 object-contain"
+              className="h-3 w-3 object-contain" 
             />
           </span>
           <span className="text-[13px] font-medium text-white/90">
             {league}
           </span>
-        </div>
+        </div> 
         <span className="text-[13px] text-white">{date}</span>
       </div>
 

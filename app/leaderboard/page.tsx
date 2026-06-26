@@ -42,7 +42,7 @@ export default function LeaderboardPage() {
         <div className="flex flex-col flex-1 px-5 pt-5">
 
           {/* Podium Card */}
-          <div className="bg-[#1D1D1D] border border-[#303030] rounded-2xl p-5 mb-6">
+          <div className="bg-primary-card border border-card-border rounded-2xl p-5 mb-6">
             <div className="flex items-end justify-center gap-4">
               {podium.map((person) => (
                 <div
@@ -62,10 +62,10 @@ export default function LeaderboardPage() {
                           : "w-16 h-16 border-[#5B8DEF]"
                       }`}
                     >
-                      <Image
+                      <Image 
                         src={person.image}
                         alt={person.name}
-                        width={80}
+                        width={80} 
                         height={80}
                         className="w-full h-full object-cover"
                       />
@@ -74,21 +74,21 @@ export default function LeaderboardPage() {
                     {/* Crown + Rank Badge */}
                     <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 bg-[linear-gradient(180deg,#3A3A3A_0%,#0F0F0F_30%,#121212_100%)] rounded-full px-2 py-1">
                       <Crown className="w-3 h-3 text-primary" />
-                      <span className="text-[#DADADA] text-xs font-bold">#{person.rank}</span>
+                      <span className="text-faded-white text-xs font-bold">#{person.rank}</span>
                     </div>
                   </div>
 
                   {/* Name + Score */}
                   <div className="text-center mt-4">
-                    <p className="text-[#DADADA] text-[10px] font-semibold max-w-22.5">
+                    <p className="text-faded-white text-[10px] font-semibold max-w-22.5">
                       {person.name}
                     </p>
-                    <p className="text-[#888888] text-xs">Score: {person.score}</p>
+                    <p className="text-primary-grey text-xs">Score: {person.score}</p>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
+          </div> 
 
           {/* Ranked List */}
           <div className="flex flex-col gap-3 mb-6">
@@ -97,7 +97,7 @@ export default function LeaderboardPage() {
                 key={person.rank}
                 className={`flex items-center gap-3 bg-[#1A1A1A] border rounded-xl px-2 py-1 ${
                   person.isMe ? "border-[#A8FC73] bg-[#A8FC73]/15 " : "border-[#2A2A2A]"
-                }`}
+                }`} 
               >
                 <span className="text-white text-sm font-medium w-6">{person.rank}.</span>
 

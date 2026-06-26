@@ -6,6 +6,14 @@
   --color-primary: #D9E012;
   --color-danger: #FF7366;
   --color-primary-dark: #1E3211;
+  --color-primary-green : #5DE505;
+  --color-primary-text: #F6F2F2;
+  --color-primary-yellow: #FCFC77;
+  --color-faded-white: #DADADA;
+  --color-primary-grey: #888888;
+  --color-primary-card: #1D1D1D;
+  --color-card-border: #303030;
+
 }
 
 body {
